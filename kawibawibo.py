@@ -6,7 +6,7 @@ import random
 관련 작업자
 ===========
 * 이원정 (Lee won jeong)
-* 정희재 (Jeong hee jae
+* 정희재 (Jeong hee jae)
 
 ---------------------------------------
 작업일지
@@ -27,31 +27,32 @@ def main():
 	for i in range(10):
 		my_finger = int(input("가위(1), 바위(2), 보(3)를 입력하세요. "))
 		while not(my_finger == 1 or my_finger == 2 or my_finger ==3):
-		my_finger = int(input("가위(1), 바위(2), 보(3)를 입력하세요. "))
+			my_finger = int(input("가위(1), 바위(2), 보(3)를 입력하세요. "))
 		
-# 사용자가 가위를 냈을 경우
+#컴퓨터가 가위를 냈을 경우
 		if(com_finger == 1):
 			if(my_finger == 1):
 				print("컴퓨터가 낸 것은 가위입니다. -----> Draw .")
 			elif(my_finger == 2):
-				print("컴퓨터가 낸 것은 가위입니다. -----> You lose !")
-			elif(my_finger == 3):
 				print("컴퓨터가 낸 것은 가위입니다. -----> You win !")
+			elif(my_finger == 3):
+				print("컴퓨터가 낸 것은 가위입니다. -----> You lose !")
 		
-# 사용자가 바위를 냈을 경우
+#컴퓨터가 바위를 냈을 경우
 		elif(com_finger == 2):
 			if(my_finger == 1):
 				print("컴퓨터가 낸 것은 바위입니다. -----> You lose !!")
 			elif(my_finger == 2):
-				print("컴퓨터가 낸 것은 가위입니다. -----> Draw .")
+				print("컴퓨터가 낸 것은 바위입니다. -----> Draw .")
 			elif(my_finger == 3):
-				print("컴퓨터가 낸 것은 가위입니다. -----> You win !")
+				print("컴퓨터가 낸 것은 바위입니다. -----> You win !")
 		
-# 사용자가 보를 냈을 경우
+#컴퓨터가 보를 냈을 경우
 		elif(com_finger == 3):
 			if(my_finger == 1):
-				print("컴퓨터가 낸 것은 바위입니다. -----> You win !")
+				print("컴퓨터가 낸 것은 보입니다. -----> You win !")
 			elif(my_finger == 2):
-				print("컴퓨터가 낸 것은 가위입니다. -----> You lose !")
+				print("컴퓨터가 낸 것은 보입니다. -----> You lose !")
 			elif(my_finger == 3):
-				print("컴퓨터가 낸 것은 가위입니다. -----> Draw .")
+				print("컴퓨터가 낸 것은 보입니다. -----> Draw .")
+main()
